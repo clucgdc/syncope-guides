@@ -1,1 +1,2 @@
-# syncope-guides
+# Topical Guides for Apache Syncope
+
