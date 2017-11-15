@@ -30,7 +30,7 @@ groupId: 		com.company.syncope
 artifactId:		syncope-archetype
 version:		1.0
 package:		(press Enter)
-anonymousKey:	secret
+anonymousKey:		secret
 jwsKey:			secret
 secretKey:		secret
 ```
@@ -62,8 +62,9 @@ copy core\target\classes\*.properties c:\opt\syncope\conf
 copy console\target\classes\*.properties c:\opt\syncope\conf
 copy enduser\target\classes\*.properties c:\opt\syncope\conf
 copy enduser\target\classes\customForm.json c:\opt\syncope\conf
-copy core\target\classes\domains\*.* c:\opt\syncope\conf\domains
 ```
+
+If you need to change domain properties, or add additional domains, do so inside syncope-archetype and rebuild the project.
 
 ### Prepare database and update Syncope configuration
 
